@@ -11,6 +11,9 @@ class Restaurant:
         self.guests = guests
         print("Обслужено гостей на данный момент: " + self.guests) 
 
+    def increment_number_served(self, posit):
+        self.number_served += posit
+
 
     def describe_restaurant(self):
         print("\nИмя Ресторана: " + self.restaurant_name.title() + "." )
@@ -25,3 +28,4 @@ my_restaurant.describe_restaurant()
 my_restaurant.open_restaurant()
 my_restaurant.number_served = 23
 my_restaurant.restaurant()
+my_restaurant.increment_number_served(20)
